@@ -1,0 +1,98 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    
+    
+
+}
+
+nav .nav-link.active:hover{
+    color: #1ECB15;
+}
+.text-j{
+    text-align: justify;
+}
+.bga {
+    background-image: radial-gradient(rgba(120, 120, 120, 0.2), rgba(0, 0, 0, 0.2)), url(./img/bg-car3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: fit-content;
+}
+.bg-2 {
+    background-image:  url(./img/backdround.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 70vh;
+    background-attachment: fixed;
+}
+.bg-3 {
+    background-image:  url(./img/subheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 60vh;
+}
+.bg-4 {
+    background-image:  url(./img/subheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 40vh;
+}
+.btn-green {
+    background-color: #1ECB15 !important;
+    color: #fff;
+}
+input#exampleFormControlInput1 {
+    background-color: transparent;
+}
+/* img{
+    transition: transform .2s;
+}
+img:hover{
+    transform:scale(1.0);
+} */
+
+/* .form-control {
+    color: white;
+    background-color: transparent;
+} */
+input#exampleFormControlInput1::placeholder {
+    color: white;
+}
+input#exampleFormControlInput1 {
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+    outline: none;
+    border-radius: none;
+}
+/* .input-group-text {
+    background-color: transparent;
+    border: none;
+    border-radius: none;
+} */
+#customRange1::-webkit-slider-thumb{
+    background: #1ECB15;
+  
+}
+.animals{
+    display: list-item;    
+   } 

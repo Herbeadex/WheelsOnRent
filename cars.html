@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-rent</title>
+    <!--  -->
+    <link rel="stylesheet" href="car-rent.css">
+    <!--  -->
+    <!--Boostrap Css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="" style="background-color: black;">
+        <div class="container">
+            <nav class="navbar d-flex align-items-center justify-content-between  navbar-expand-lg ">
+               
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><span style="color: #1ECB15;">Wheels</span><span
+                        class="text-light">OnRent</span></a>
+
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="background-color: #1ECB15;"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="car-rent.html">HOME</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="cars.html">CARS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="bookings.html">BOOKINGS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="about.html">ABOUT US</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="btn btn-green text-light fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            SIGN IN
+                          </button>
+                    </div>
+                </div>
+
+
+
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="bg-2">
+        <div class="d-flex align-items-center justify-content-center" style="width: 100%; height: 100%;">
+            <h1 class="fw-bold text-light">Cars</h1>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3">
+
+                <div class="col-sm-12 rounded border p-3">
+                    <h6 class="fw-bold">Vehicle Type</h6>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="fruit"  onclick = "showFruits()"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Car
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Van
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Minibus
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Prestige
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 rounded border p-3 mt-3">
+                    <h6 class="fw-bold">Car body Type</h6>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Convertible
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Coupe
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Exotic Cars
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Hatchback
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Minivan
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Pickup Truck
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Sports Car
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Station Wagon
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Sedan
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            SUV
+                        </label>
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-12 rounded border p-3 mt-3">
+                    <h6 class="fw-bold">Car seats</h6>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            2 seats
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            4 seats
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            6 seats
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            6+ seats
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 rounded border p-3 mt-3">
+                    <h6 class="fw-bold">Car Engine Capacity (cc)</h6>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            1000 - 2000
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            2000 - 4000
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            4000 - 6000
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            6000+
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 rounded border p-3 mt-3 mb-3">
+                    <h6 class="fw-bold">Price($)</h6>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <p>Min:<span class="ps-3 fw-bold">0</span></p>
+                            
+                        </div>
+
+                        <div>
+                            <p>Max:<span class="fw-bold ps-3">2000</span></p>
+                        </div>
+                    </div>
+
+                    <input type="range" class="form-range" id="customRange1">
+
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-9 ">
+
+                <!-- First Container -->
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div class="col-sm-12 mb-3 border rounded p-2 " id = "fruits-div">
+                            <img src="img/ferrari-enzo.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Ferrari Enzo</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: red;"></i> 58</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>Exotic Car</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$167</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div class="col-sm-12 mb-3 border rounded p-2" id="Melon">
+                            <img src="img/jeep-renegade.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Jeep Renegade</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: red;"></i> 95</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>SUV</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$265</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/bmw-m5.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">BMW M2</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: red;"></i> 45</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>Sedan</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$244</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/ford-raptor.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Ford Raptor</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: #cccccc"></i> 36</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>Pickup Truck</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$147</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/mini-cooper.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Mini Cooper</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: #cccccc"></i> 87</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>Hatchback</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$248</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/vw-polo.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">VW POLO</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: #cccccc"></i> 36</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>Hatchback</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$106</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/chevrolet-camaro.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Chevrolet Camaro</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: red"></i> 36</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>Exotic Car</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$245</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/hyundai-staria.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Hyundai Staria</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: red"></i> 87</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>Minivan</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">191</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/toyota-rav.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Toyota Rav 4</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: #cccccc"></i> 36</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>SUV</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$114</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/bentley.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Bentley</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: #cccccc"></i> 36</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>SUV</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">299</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/lexus.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Lexus</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: #cccccc"></i> 87</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>Sedan</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$208</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+                        <div class="col-sm-12 mb-3 border rounded p-2 ">
+                            <img src="img/range-rover.jpg" alt="" class="w-100 rounded">
+        
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="fw-bold">Range Rover</h6>
+                                    <div class="">
+                                        <h6><i class="bi bi-heart-fill" style="color: red"></i> 36</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-person"></i>5</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-briefcase pe-1"></i>2</h6>
+                                    <h6 class="fw-bold pe-2"><i class="bi bi-car-front pe-2"></i>Exotic Car</h6>
+                                </div>
+                                <hr>
+                                <p>Daily rate from</p>
+        
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="fw-bold">$228</h4>
+                                    <div class="">
+                                        <a href="" class="btn btn-green rounded  text-light fw-bold">Rent Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <div style="background-color: black; margin-top: 100px;" >
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="col-sm-12">
+                        <h6 class=" fw-bold text-light">About WheelsonRent</h6>
+                        <p class="text-light pt-2">Where quality meets affordability. We understand the importance of a
+                            smooth and enjoyable journey without the burden of excessive costs. That's why we have
+                            meticulously crafted our offerings to provide you with top-notch vehicles at minimum
+                            expense.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="col-sm-12">
+                        <h6 class="h6 fw-bold text-light">Contact Info</h6>
+                        <p class="text-light pt-2"><i class="bi bi-geo-alt-fill pe-2" style="color: #1ECB15;"></i>05 Joju St, Sango, Ogun State</p>
+                        <p class="text-light "> <i class="bi bi-telephone-fill pe-2" style="color: #1ECB15;"></i>+2349014808576</p>
+                        <p class="text-light "><i class="bi bi-briefcase pe-2" style="color: #1ECB15;"></i>herbeadex87@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="col-sm-12">
+                        <h6 class="fw-bold text-light">Quick Links</h6>
+                        <p><a href="cars.html" class=" text-light fw-bold pt-2" style="text-decoration: none;">Cars</a></p>
+                        <p><a href="bookings.html" class=" text-light fw-bold" style="text-decoration: none;">Bookings</a></p>
+                        <p><a href="about.html" class=" text-light fw-bold" style="text-decoration: none;">About Us</a></p>
+                        </p><a href="contact.html" class=" text-light fw-bold" style="text-decoration: none;">Contact Us</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                    <div class="col-sm-12">
+                        <h6 class="fw-bold text-light">Social Networks</h6>
+                        <a href=""><i class="bi bi-facebook" style="color: #1ECB15; font-size: 20px;  "></i></a>
+                        <a href=""><i class="bi bi-twitter" style="color: #1ECB15; font-size: 20px;  "></i></a>
+                        <a href=""><i class="bi bi-linkedin" style="color: #1ECB15; font-size: 20px;  "></i></a>
+                        <a href=""><i class="bi bi-pinterest" style="color: #1ECB15; font-size: 20px;  "></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal" aria-label="Close" style="color: #1ECB15;"></button>
+        <!-- </div> -->
+        <div class="modal-body p-5">
+            <div class="text-center">
+            <h3 class="" href="#"><span style="color: #1ECB15;">Wheels</span><span
+                class="text-dark">OnRent</span></h3>
+
+            </div>
+           <div class="">
+                <h4>Login</h4>
+                <div class="form-group">
+                    <label for="form_name">Username</label>
+                  <input id="form_name" type="text" name="name" class="form-control rounded-pill"
+                        placeholder="" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label ">Password</label>
+                        <input type="password" class="form-control rounded-pill" id="exampleInputPassword1">
+                      </div>
+
+                      <!-- <div class=" d-flex align-items-center justify-content-center"> -->
+                        <a href="" class="d-flex align-items-center justify-content-center btn btn-green rounded fw-bold mb-3 text-light">SIGN IN</a>
+                    <!-- </div> -->
+
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between">
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="border-color: #1ECB15;">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Remember me
+                        </label>
+                    </div>
+                        <div>
+                        <a href="" class="mb-3 text-dark text-decoration-none">Forgot Password?</a>
+                    </div>
+                </div>
+
+
+                <div class="d-flex align-items-center justify-content-between mt-4">
+                    <p>Don't have an account?</p>
+                    
+                        <a href="register.html" class="btn btn-green rounded fw-bold mb-3 text-light">REGISTER</a>
+                    
+                </div>
+           </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        function showFruits() {
+        let fruit = document.getElementById('fruit');
+        let fruits_div = document.getElementById('fruits-div');
+        let apple= document.getElementById('Melon')
+        if (fruit.checked) {
+            fruits_div.style.display = "none";
+            apple.style.display = "none";
+        } else {
+            fruits_div.style.display = "";
+            apple.style.display = "";
+        }
+       }
+    </script>
+</body>
+
+</html>
