@@ -80,7 +80,7 @@ input#exampleFormControlInput1 {
 }
 
 #customRange1::-webkit-slider-thumb{
-    background: #1ECB15;
+    background: #1ECB15 !important;
   
 }
 .animals{
