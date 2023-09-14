@@ -1,6 +1,9 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 
 a.navbar-brand {
     font-family: 'Poppins', sans-serif;
