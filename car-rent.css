@@ -7,18 +7,20 @@ a.navbar-brand {
     font-weight: 600;
     font-size: 25px;
 }
+
 nav .nav-link {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 15px;
     
     
-
+}
+nav .nav-link:hover {
+   border-bottom: 2px solid #1ECB15;
+  
 }
 
-nav .nav-link.active:hover{
-    color: #1ECB15;
-}
+
 .text-j{
     text-align: justify;
 }
@@ -62,17 +64,7 @@ nav .nav-link.active:hover{
 input#exampleFormControlInput1 {
     background-color: transparent;
 }
-/* img{
-    transition: transform .2s;
-}
-img:hover{
-    transform:scale(1.0);
-} */
 
-/* .form-control {
-    color: white;
-    background-color: transparent;
-} */
 input#exampleFormControlInput1::placeholder {
     color: white;
 }
@@ -84,11 +76,7 @@ input#exampleFormControlInput1 {
     outline: none;
     border-radius: none;
 }
-/* .input-group-text {
-    background-color: transparent;
-    border: none;
-    border-radius: none;
-} */
+
 #customRange1::-webkit-slider-thumb{
     background: #1ECB15;
   
@@ -96,3 +84,28 @@ input#exampleFormControlInput1 {
 .animals{
     display: list-item;    
    } 
+
+   @media screen and (max-width: 768px) {
+    #sect1 {
+        
+        width: 85px;
+       
+    }
+    .bg-2{
+        height: 50vh;
+    }
+    .man{
+        display: inline;
+    }
+}
+   @media screen and (max-width: 991.98px) {
+    .bg-2{
+        height: 50vh;
+    }
+
+    .man{
+        display:none;
+    }
+
+    
+}
