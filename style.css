@@ -16,10 +16,13 @@ nav .nav-link {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 15px;
+    position: relative;
+   
 }
 nav .nav-link:hover {
    border-bottom: 2px solid #1ECB15;
-  
+   
+ 
 }
 
 
@@ -99,6 +102,13 @@ input#exampleFormControlInput1 {
     .man{
         display: inline;
     }
+
+    nav .nav-link {
+        width: 30%;
+
+    }
+
+
 }
    @media screen and (max-width: 991.98px) {
     .bg-2{
@@ -107,6 +117,11 @@ input#exampleFormControlInput1 {
 
     .man{
         display:none;
+    }
+
+    nav .nav-link {
+        width: 20%;
+
     }
 
     
