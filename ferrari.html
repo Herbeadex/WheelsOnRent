@@ -189,14 +189,14 @@
                 <div class="mt-4 shadow p-3">
                     <p class="fw-bold">Booking this Car</p>
 
+                    <form action="">
                     <div class="row">
-
                         <div class="col-sm-12">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput2" class="form-label text-dark">Choose
                                     Location</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput2"
-                                    placeholder="Enter your pickup location">
+                                    placeholder="Enter your pickup location" required>
                             </div>
                         </div>
 
@@ -240,10 +240,13 @@
                         </div>
 
                         <div class="text-center">
-                            <a href="" class="btn btn-green rounded-pill mb-3 text-light">Book Now</a>
+                            <!-- <a href="" class="btn btn-green rounded-pill mb-3 text-light" type="submit">Book Now</a> -->
+
+                            <button type="button" class="btn btn-green rounded-pill mb-3 text-light" onclick="alert('We appreciate your car booking with us. Looking forward to serving you soon!')">Book Now</button>
                         </div>
 
                     </div>
+                </form>
 
                 </div>
 
